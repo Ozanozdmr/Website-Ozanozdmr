@@ -1,0 +1,21 @@
+.row {
+  margin-bottom: 20px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col-2 {
+  float: left;
+  width: 50%;
+}
+.col-3 {
+  float: left;
+  width: 33.3;
+}
+.col-4 {
+  float: left;
+  width: 25;
+}
+/* BUNLARI ARTIK HER SEFERİNDE TEKRAR YAZMAK İSTEMEDİĞİMİZDEN DOLAYI BURAYA YAZIP OTOMATİK OLARAK CLASS VERİP BÖYLE UYGULAYABİLİRİZ */

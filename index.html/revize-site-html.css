@@ -1,0 +1,445 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* BURADAN HEADER BAŞLIYOR */
+.container-header {
+  height: 100vh;
+  background: linear-gradient(45deg, black, transparent),
+    url(/pexels-janko-ferlic-590493.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.header a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 1000;
+}
+.nav a::after {
+  content: "";
+  display: block;
+  background: #ffc000;
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.nav a:hover::after {
+  width: 100%;
+}
+.logo {
+  padding: 0px 30px;
+  font-size: 33px;
+  position: relative;
+}
+.header li {
+  list-style: none;
+  padding: 13px;
+  font-size: 1em;
+}
+.header ul {
+  margin: 40px;
+}
+.logo span {
+  color: red;
+  position: absolute;
+  right: 25px;
+}
+/* ORTA KISMI YAPIYORUZ */
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.middle-text {
+  width: 600px;
+  text-align: center;
+  color: white;
+  padding: 15px 0px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.middle-text span {
+  color: red;
+}
+.middle-text a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  border: 2px solid red;
+  padding: 5px 20px;
+}
+.middle-text:hover {
+  box-shadow: 6px 5px 19px 6px black;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* ORTA KISIM BİTTİ */
+.content-1 {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.content-1__half-1 {
+  height: 300px;
+  width: 40%;
+  background: url(/pexels-nao-triponez-129208.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -o-border-radius: 10px 0px 0px 10px;
+}
+.content-1__half-2 {
+  height: 300px;
+  width: 40%;
+  padding: 50px;
+  background-color: rgb(43, 54, 71);
+  border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -ms-border-radius: 0px 10px 10px 0px;
+  -o-border-radius: 0px 10px 10px 0px;
+}
+.content-1__half-2 p {
+  padding: 30px 10px;
+  color: white;
+}
+.content-1__half-2 h2 {
+  color: #ffc000;
+  padding: 0px 10px;
+}
+/* KURSLARA GEÇİYOM */
+.content-2__header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.content-2__kurslar {
+  display: flex;
+  justify-content: center;
+}
+.arapça {
+  width: 30%;
+  height: 488px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.rusça {
+  width: 30%;
+  height: 488px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.japonca {
+  width: 30%;
+  height: 488px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.box-1 {
+  background: url(/arabic.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 2, 2, 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.arapça:hover .layer {
+  background: rgba(255, 2, 2, 0.6);
+}
+.arapça:hover .box-1 {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.arapça p {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 1000;
+}
+.box-2 {
+  background: url(/ruski.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.rusça:hover .layer {
+  background: rgba(255, 2, 2, 0.6);
+}
+.rusça p {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 1000;
+}
+.rusça:hover .box-2 {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.box-3 {
+  background: url(/japon.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.japonca:hover .layer {
+  background: rgba(255, 2, 2, 0.6);
+}
+.japonca:hover .box-3 {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.japonca p {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 1000;
+}
+.header li:last-child {
+  display: none;
+}
+
+/* KURSLAR BİTTTTTİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİ */
+
+/* FOOTER GEÇİŞŞŞŞŞŞŞŞŞŞŞŞŞŞ */
+.footer {
+  height: 500px;
+  background: #2b3647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-weight: 1000;
+}
+.footer li {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+.footer li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-logo {
+  font-size: 36px;
+}
+.links a {
+  padding: 5px;
+}
+.links i {
+  border: 2px solid white;
+  border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  -ms-border-radius: 21px;
+  -o-border-radius: 21px;
+  padding: 5px 20px;
+  font-size: 1.5em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.footer a:hover {
+  color: #ffc000;
+}
+
+.footer a:hover i {
+  color: white;
+  border: 2px solid #ffc000;
+}
+.font {
+  font-size: 20px;
+}
+.footer i::after {
+  content: "TAKIP ET";
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 10px;
+  top: 100%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(43, 54, 71);
+  width: 100%;
+  height: 100%;
+  border: radius 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  -ms-border-radius: 21px;
+  -o-border-radius: 21px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.footer i:hover::after {
+  top: 0%;
+}
+.footer li:last-child {
+  padding: 0px;
+}
+/* MEDİA KISMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+@media screen and (max-width: 600px) {
+  .header {
+    background: rgb(43, 54, 71, 0.7);
+    position: relative;
+    flex-direction: column;
+  }
+  .header ul {
+    margin: 0;
+    text-align: center;
+  }
+  .logo {
+    align-self: flex-start;
+    padding: 0;
+  }
+  .logo span {
+    color: red;
+    position: absolute;
+    right: -4px;
+  }
+  .nav {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .middle {
+    align-items: center;
+  }
+  .header li:last-child {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+  }
+  .header li {
+    display: block;
+  }
+  .arapça {
+    width: 30%;
+    height: 167px;
+    text-align: center;
+    padding: 0px 15px;
+  }
+  .rusça {
+    width: 30%;
+    height: 167px;
+    text-align: center;
+    padding: 0px 15px;
+  }
+  .japonca {
+    width: 30%;
+    height: 167px;
+    text-align: center;
+    padding: 0px 15px;
+  }
+}
